@@ -1,5 +1,7 @@
 terraform {
-  backend "s3" {}
+  backend "s3" {
+    key = "global/s3/state-store.tfstate"
+  }
 
   required_version = ">= 1.2.0"
 }
